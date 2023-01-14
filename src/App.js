@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import { MemeContainer } from "./MemeContainer";
+
+const Container = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+width:100vw;
+`
+
+const Header = styled.h1`
+    font-weight:bold;
+    font-size:50px;
+    color:darkcyan;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container >
+      <Header>
+        Вот так хохма!
+      </Header>
+      <MemeContainer />
+    </Container >
   );
 }
 
