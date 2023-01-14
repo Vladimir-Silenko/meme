@@ -18,10 +18,9 @@ const MemeBox = styled.div`
 
 const Meme = styled.img`
     min-width:30%;
+    max-width:50%;
     margin:20px;
-    @media (min-width: 540px) {
-    width:100%;
-  }
+    
 `
 
 export const MemeContainer = () => {
